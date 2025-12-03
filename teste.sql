@@ -106,3 +106,7 @@ DELETE from dbo.cidade
 
 SELECT * from dbo.cliente
 	WHERE nome like '_%a'
+
+SELECT dh_coleta, tempo_min, tempo_max, precip_pluviom
+	FROM dbo.tempo OFFSET 4 LIMIT 4;
+
