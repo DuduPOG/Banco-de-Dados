@@ -110,3 +110,5 @@ SELECT * from dbo.cliente
 SELECT dh_coleta, tempo_min, tempo_max, precip_pluviom
 	FROM dbo.tempo OFFSET 4 LIMIT 4;
 
+-- exibir as diferentes temperaturas mínimas observadas
+SELECT DISTINCT tempo_min FROM dbo.tempo;
